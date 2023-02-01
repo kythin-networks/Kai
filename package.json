@@ -1,0 +1,22 @@
+{
+  "name": "kai",
+  "version": "0.1.0",
+  "description": "Kai is a multipurpose discord bot from Kythin Networks that happens to be a dragon.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "lint": "eslint ./index.js commands/ events/",
+    "lintfix": "eslint --fix ./index.js commands/ events/",
+    "dply-cmds": "node ./deploy-cmds.js"
+  },
+  "author": "Exehad",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0"
+  }
+}
