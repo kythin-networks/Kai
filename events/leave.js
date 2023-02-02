@@ -1,11 +1,10 @@
 require('dotenv').config();
 
 module.exports = {
-	name: 'guildMemberAdd',
+	name: 'guildMemberRemove',
 	once: false,
 	execute(mem) {
-		const user = mem.fetch()
 		const channel = mem.client.channels.cache.get(process.env.W_ID);
-		channel.send(`${mem} has joined the server!`);
+		channel.send(`${mem} has left the server.`);
 	},
 };
